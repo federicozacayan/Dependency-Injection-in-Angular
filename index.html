@@ -90,7 +90,7 @@ button {
 <span class="token keyword">import</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> OnInit <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
 @<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token operator">...</span>
-  trmplate<span class="token punctuation">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;ng-content&gt;&lt;Child /&gt;&lt;/ng-content&gt;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  template<span class="token punctuation">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;ng-content&gt;&lt;Child /&gt;&lt;/ng-content&gt;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span><span class="token comment">//check it out </span>
   viewProviders<span class="token punctuation">:</span><span class="token punctuation">[</span>Dummy<span class="token punctuation">]</span> <span class="token comment">//check it out </span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">ParentComponent</span> <span class="token keyword">implements</span> <span class="token class-name">OnInit</span> <span class="token punctuation">{</span>
@@ -111,7 +111,7 @@ import Child from './Child';
 import { Component, OnInit } from '@angular/core';
 @Component({
   ...
-  trmplate: `&lt;ng-content&gt;&lt;Child /&gt;&lt;/ng-content&gt;`,
+  template: `&lt;ng-content&gt;&lt;Child /&gt;&lt;/ng-content&gt;`,//check it out 
   viewProviders:[Dummy] //check it out 
 })
 export class ParentComponent implements OnInit {
